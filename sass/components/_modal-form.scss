@@ -1,0 +1,127 @@
+.form-subscription {
+  display: block;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.form__item {
+  display: block;
+  height: 40px;
+  width: 448px;
+  border-radius: 4px;
+  border: 1px solid var(--border-form-color);
+  cursor: pointer;
+  padding-left: 42px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  outline: none;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+  }
+}
+
+.form__placeholder-text {
+  display: block;
+  width: 448px;
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid var(--border-form-color);
+  padding: 12px 16px;
+  resize: none;
+  outline: none;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--placeholder-modal-color);
+  }
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+  }
+}
+
+.form__text {
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  font-weight: 400;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+.subscription {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  color: var(--primary-text-color);
+  line-height: 1.7;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    border: 2px var(--secondary-text-color) solid;
+    top: 3px;
+    left: 52px;
+
+    .modal-checkbox:focus + &,
+    .modal-checkbox:hover + & {
+      border-color: var(--accent-color);
+    }
+    .modal-checkbox:checked + & {
+      width: 16px;
+      height: 15px;
+      background-image: url(../images/icon-check.svg);
+      border: none;
+    }
+  }
+}
+.subscription-contract {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 400;
+  text-align: center;
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.form__input {
+  position: relative;
+  margin-bottom: 10px;
+}
+.form__icon {
+  position: absolute;
+  fill: var(--secondary-text-color);
+  left: 0;
+  top: 0;
+  transform: translateX(15px) translateY(14px);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .form__item:focus + &,
+  .form__item:hover + & {
+    fill: var(--accent-color);
+  }
+}

@@ -1,0 +1,16 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: 80px;
+  background-color: var(--white-color);
+  border-bottom: 1px solid var(--border-header-color);
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+.header__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

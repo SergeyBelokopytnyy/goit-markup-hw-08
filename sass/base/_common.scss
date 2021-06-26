@@ -1,0 +1,43 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.link,
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+  z-index: 2;
+  margin: 0;
+  padding-top: 80px;
+}
+header,
+main,
+footer {
+  z-index: 1;
+}
+.logo,
+.foot-info__logo {
+  font-family: 'Raleway', sans-serif;
+}

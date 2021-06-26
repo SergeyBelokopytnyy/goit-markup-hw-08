@@ -1,0 +1,26 @@
+.features__list {
+  @extend %all-flexx;
+}
+.features__text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.features__item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features__thumb {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--section-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}

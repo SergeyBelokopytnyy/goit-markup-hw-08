@@ -1,0 +1,70 @@
+/* ГЛАВНЫЙ ЗАГОЛОВОК */
+
+.hero__title {
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ОСОБЕННОСТИ (скрытый заголовок) */
+
+.features__title {
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.17;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--secondary-text-color);
+}
+
+.work__title {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  font-size: 14px;
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+  background-color: var(--work-item-color);
+}
+
+.team__name {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.project__title {
+  color: var(--secondary-text-color);
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 4px;
+}
+
+.form__title {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: var(--secondary-text-color);
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
