@@ -83,7 +83,7 @@ footer {
 }
 
 .container {
-  min-width: 480px;
+  min-width: 320px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -825,7 +825,7 @@ footer {
 }
 
 .team__item {
-  max-width: 450px;
+  min-width: 320px;
   background-color: var(--white-color);
   margin-left: 15px;
   margin-top: 30px;
