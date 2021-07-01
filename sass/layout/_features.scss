@@ -16,7 +16,7 @@
 
 .features__thumb {
   display: flex;
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   background-color: var(--section-color);
   border-radius: 4px;
