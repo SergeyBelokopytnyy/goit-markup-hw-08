@@ -21,7 +21,7 @@
   --border-clients-color: #afb1b8;
 }
 
-.portfol__list, .social__list--position, .features__list, .work__list, .team__list, .team__box .social__list, .project__list, .clients__list {
+.portfol__list, .social__list--position, .features__list, .team__list, .team__box .social__list, .project__list, .clients__list {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -73,8 +73,17 @@ footer {
   font-family: 'Raleway', sans-serif;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.features {
+  padding-bottom: 30px;
+}
+
 .container {
-  min-width: 320px;
+  width: 480px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -271,11 +280,17 @@ footer {
 }
 
 .title {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   text-align: center;
-  margin-bottom: 50px;
   color: var(--secondary-text-color);
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+  }
 }
 
 .work__title {
@@ -799,21 +814,6 @@ footer {
   }
 }
 
-.work {
-  color: var(--secondary-text-color);
-}
-
-.work__item {
-  position: relative;
-  margin-top: 30px;
-  margin-left: 30px;
-}
-
-.work__list {
-  margin-top: -30px;
-  margin-left: -30px;
-}
-
 .team {
   background-color: var(--section-color);
 }
@@ -826,26 +826,59 @@ footer {
 
 .team__item {
   background-color: var(--white-color);
-  margin-left: 30px;
+  margin-left: 15px;
   margin-top: 30px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (min-width: 1200px) {
+  .team__item {
+    margin-left: 30px;
+  }
+}
+
 .team__list {
+  flex-direction: column;
   margin-top: -30px;
-  margin-left: -30px;
+  margin-left: -15px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__list {
+    margin-left: -30px;
+    flex-wrap: nowrap;
+  }
 }
 
 .team__box {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.team__box .social__list {
-  justify-content: space-between;
+@media screen and (min-width: 1200px) {
+  .team__box {
+    padding-bottom: 30px;
+  }
+}
+
+.social__item {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social__item {
+    margin-right: auto;
+  }
 }
 
 .project__list {
