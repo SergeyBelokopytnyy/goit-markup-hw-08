@@ -2,6 +2,11 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+// @media screen and (min-width: 768px) {
+//   .section {
+//     margin-right: -30px;
+//   }
+// }
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
@@ -16,16 +21,16 @@
 .features {
   padding-bottom: 30px;
 }
-.clients {
-  margin-right: auto;
-}
-@media screen and (min-width: 768px) {
-  .clients {
-    margin-right: -30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .clients {
-    margin-right: auto;
-  }
-}
+// .clients {
+//   margin-right: auto;
+// }
+// @media screen and (min-width: 768px) {
+//   .clients {
+//     margin-right: -30px;
+//   }
+// }
+// @media screen and (min-width: 1200px) {
+//   .clients {
+//     margin-right: auto;
+//   }
+// }
