@@ -18,6 +18,25 @@
   }
 }
 
+.container-foot {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  // display: flex;
+  // align-items: baseline;
+}
+@media screen and (min-width: 768px) {
+  .container-foot {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-foot {
+    align-items: baseline;
+  }
+}
 // .container {
 //   width: 1200px;
 //   padding-right: 15px;
