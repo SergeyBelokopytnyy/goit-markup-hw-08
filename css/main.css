@@ -21,7 +21,7 @@
   --border-clients-color: #afb1b8;
 }
 
-.portfol__list, .social__list--position, .features__list, .team__list, .team__box .social__list, .project__list, .clients__list {
+.portfol__list, .social__list--position, .features__list, .team__list, .team__box .social__list, .project__list {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -91,6 +91,22 @@ footer {
 
 .features {
   padding-bottom: 30px;
+}
+
+.clients {
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    margin-right: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    margin-right: auto;
+  }
 }
 
 .container {
@@ -1005,11 +1021,16 @@ footer {
 }
 
 .clients__list {
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
   margin-bottom: -30px;
-  margin-right: -30px;
+}
+
+@media screen and (min-width: 480px) {
+  .clients__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1023,7 +1044,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 210px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--border-clients-color);
   border-radius: 4px;
@@ -1052,12 +1075,12 @@ footer {
 
 .clients__item {
   margin-bottom: 30px;
-  margin-right: 30px;
 }
 
 @media (min-width: 480px) {
   .clients__item {
     width: 210px;
+    margin-right: 30px;
   }
 }
 
