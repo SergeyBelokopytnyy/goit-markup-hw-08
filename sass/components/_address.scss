@@ -15,3 +15,33 @@
     color: var(--accent-color);
   }
 }
+.address__icon {
+  display: flex;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .address__link:focus &,
+  .address__link:hover & {
+    fill: var(--accent-color);
+  }
+}
+
+.address {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .address {
+    display: contents;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
+}
+
+.address__item:not(:last-child) {
+  margin-right: 50px;
+}
