@@ -21,7 +21,7 @@
   --border-clients-color: #afb1b8;
 }
 
-.portfol__list, .social__list--position, .features__list, .team__list, .team__box .social__list, .project__list, .form-footer {
+.portfol__list, .social__list--position, .features__list, .work__list, .team__list, .team__box .social__list, .project__list, .form-footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -820,6 +820,28 @@ footer {
   .features__thumb {
     width: 270px;
   }
+}
+
+.work {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
+    display: contents;
+    color: var(--secondary-text-color);
+  }
+}
+
+.work__item {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.work__list {
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .team {

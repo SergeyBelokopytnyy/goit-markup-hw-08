@@ -1,14 +1,20 @@
-// .work {
-//   color: var(--secondary-text-color);
-// }
+.work {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: contents;
+    color: var(--secondary-text-color);
+  }
+}
 
-// .work__item {
-//   position: relative;
-//   margin-top: 30px;
-//   margin-left: 30px;
-// }
-// .work__list {
-//   @extend %all-flexx;
-//   margin-top: -30px;
-//   margin-left: -30px;
-// }
+.work__item {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.work__list {
+  @extend %all-flexx;
+  margin-top: -30px;
+  margin-left: -30px;
+}
