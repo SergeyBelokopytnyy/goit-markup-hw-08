@@ -42,12 +42,13 @@
   }
 }
 .mobile-nav {
-  position: absolute;
+  position: fixed;
   background-color: var(--white-color);
   top: 0;
   width: 100vw;
   height: 100vh;
   overflow-y: auto;
+  overflow-x: auto;
 }
 .mobile-container {
   @extend %all-flexx;
