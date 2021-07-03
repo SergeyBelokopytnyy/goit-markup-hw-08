@@ -19,7 +19,7 @@
 
   &::after {
     position: absolute;
-    bottom: -190%;
+    bottom: -220%;
     display: block;
     content: '';
     width: 100%;
@@ -31,6 +31,11 @@
 .site-nav__list {
   display: flex;
   flex-direction: row;
+}
+@media screen and (min-width: 768px) {
+  .site-nav__list {
+    margin-right: 84px;
+  }
 }
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
