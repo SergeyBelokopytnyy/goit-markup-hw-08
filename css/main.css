@@ -790,6 +790,11 @@ footer {
 
 .mobile-media__item {
   padding-right: 10px;
+  margin-right: 10px;
+}
+
+.mobile-media__item:not(:last-child) {
+  border-right: 1px solid var(--border-form-color);
 }
 
 .mobile-media__link {

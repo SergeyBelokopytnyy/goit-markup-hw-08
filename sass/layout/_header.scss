@@ -64,9 +64,10 @@
 .mobile-media__item {
   // position: relative;
   padding-right: 10px;
-  // @media (min-width: 480px) {
-  //   width: 480px;
-  // }
+  margin-right: 10px;
+  &:not(:last-child) {
+    border-right: 1px solid var(--border-form-color);
+  }
 }
 .mobile-media__link {
   font-size: 18px;
