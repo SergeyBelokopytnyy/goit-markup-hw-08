@@ -41,14 +41,66 @@
           </a>
         </li>
       </ul>
+      <button type="button" class="menu-open">
+        <svg width="24" height="16">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+      </div>
+      <div class="mobile-nav is--hidden">
+        <div class="container mobile-container">
+          <button type="button" class="menu-close">
+            <svg width="18.67" height="18.67">
+              <use href="./images/icons.svg#icon-vector"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mobile-menu list">
+              <li class="mobile-menu__item">
+                <a href="./index.html" class="mobile-menu__link link">Студия</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--current link">Портфолио</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-nav__bottom">
+            <ul class="mobile-contacts list">
+              <li class="mobile-contacts__item">
+                <a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--phone link">+38 096 111 11
+                  11</a>
+              </li>
+              <li class="mobile-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mobile-contacts__link link">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile-media list">
+              <li class="mobile-media__item">
+                <a href="" class="mobile-media__link link">Instagram</a>
+              </li>
+              <li class="mobile-media__item">
+                <a href="" class="mobile-media__link link">Twitter</a>
+              </li>
+              <li class="mobile-media__item">
+                <a href="" class="mobile-media__link link">Facebook</a>
+              </li>
+              <li class="mobile-media__item">
+                <a href="" class="mobile-media__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
     </div>
   </header>
   <!--Тело сайта-->
   <main>
-    <section class="portfol section">
+    <!-- <section class="portfol section">
       <div class="container">
         <h1 class="visually--hidden">Наше портфолио</h1>
-        <!--нужен для разметки.скроется при стилизации-->
+        нужен для разметки.скроется при стилизации
         <ul class="portfol__list">
           <li class="portfol__item"><button class="button button--portfolio" type="button">Все</button></li>
           <li class="portfol__item"><button class="button button--portfolio" type="button">Веб-сайты</button></li>
@@ -56,9 +108,9 @@
           <li class="portfol__item"><button class="button button--portfolio" type="button">Дизайн</button></li>
           <li class="portfol__item"><button class="button button--portfolio" type="button">Маркетинг</button></li>
         </ul>
-        <!--Проекты-->
+        Проекты
         <h2 class="visually--hidden">Наши проекты</h2>
-        <!--нужен для разметки.скроется при стилизации-->
+        нужен для разметки.скроется при стилизации
         <ul class="project__list">
           <li class="project__item">
             <a href="" class="project__link">
@@ -179,7 +231,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
   </main>
   <!--Подвал сайта-->
   <footer>
@@ -188,7 +240,8 @@
         <a class="logo logo--footer link" href=""><span class="logo__logotip">Web</span>Studio</a>
         <address class="foot-info__address">
           <ul class="foot-info__list">
-            <li><a class="link foot-info__item foot-info__maps" href="https://goo.gl/maps/ENBTeQWaKfRkF7op7" target="_blank" rel="noopener nofollow">г.
+            <li><a class="link foot-info__item foot-info__maps" href="https://goo.gl/maps/ENBTeQWaKfRkF7op7"
+                target="_blank" rel="noopener nofollow">г.
                 Киев,
                 пр-т Леси
                 Украинки, 26</a></li>
@@ -234,16 +287,19 @@
         <p class="social__title">Подпишитесь на рассылку</p>
         <form class="form-footer">
           <label for="email-subscription"></label>
-          <input class="form-footer__item" type="email" name="user-email" id="email-subscription" placeholder="E-mail">
+          <input class="form-footer__item" type="email" name="user-email-subscription" id="email-subscription"
+            placeholder="E-mail">
           <div class="form-footer__subscription">
-            <button class="button button--subscription" type="submit">Подписаться</button>
-            <svg class="form-footer__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
+            <button class="button button--subscription" type="submit">Подписаться
+              <svg class="form-footer__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </div>
         </form>
       </div>
     </div>
   </footer>
+  <script src="./js/menu.js"></script>
 </body>
 </html>

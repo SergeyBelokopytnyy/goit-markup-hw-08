@@ -33,11 +33,11 @@
     padding-bottom: 0;
   }
 }
-.navigation {
+.site-nav {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .navigation {
+  .site-nav {
     display: contents;
   }
 }
