@@ -82,3 +82,47 @@
     cursor: pointer;
   }
 }
+//  Кнопка закрыть для мобильного меню
+
+.menu-close {
+  position: absolute;
+  right: 25px;
+  top: 21px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
+}
+
+//  Кнопка открыть для мобильного меню
+
+.menu-open {
+  background-color: transparent;
+  border: none;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}

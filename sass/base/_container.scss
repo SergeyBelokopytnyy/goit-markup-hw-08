@@ -18,11 +18,24 @@
   }
 }
 
+// Контейнер для мобильного меню
+
+.mobile-container {
+  @extend %all-flexx;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  position: relative;
+  height: 100%;
+  margin-left: 25px;
+}
+
+// Контейнер для футера
+
 .container-foot {
   padding-bottom: 60px;
   padding-top: 60px;
-  // display: flex;
-  // align-items: baseline;
 }
 @media screen and (min-width: 768px) {
   .container-foot {
@@ -37,10 +50,3 @@
     align-items: baseline;
   }
 }
-// .container {
-//   width: 1200px;
-//   padding-right: 15px;
-//   padding-left: 15px;
-//   margin-right: auto;
-//   margin-left: auto;
-// }
