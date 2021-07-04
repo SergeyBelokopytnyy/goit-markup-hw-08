@@ -66,7 +66,7 @@ footer {
 }
 
 .form-footer {
-  @extend %all-flexx;
+  @include flex;
   flex-direction: column;
   @media (min-width: 480px) {
     width: 450px;

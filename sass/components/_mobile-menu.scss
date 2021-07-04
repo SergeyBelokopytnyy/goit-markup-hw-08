@@ -13,7 +13,7 @@
 // Список соцсетей в мобильном меню //
 
 .mobile-media {
-  @extend %all-flexx;
+  @include flex;
   justify-content: start;
   position: relative;
 }

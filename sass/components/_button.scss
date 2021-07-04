@@ -13,7 +13,8 @@
 /* КНОПКИ-ФИЛЬТР В СЕКЦИИ ПОРТФОЛИО */
 
 .portfol__list {
-  @extend %all-flexx;
+  @include flex;
+
   margin-bottom: 40px;
   flex-wrap: wrap;
   justify-content: start;

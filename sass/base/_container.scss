@@ -21,7 +21,7 @@
 // Контейнер для мобильного меню
 
 .mobile-container {
-  @extend %all-flexx;
+  @include flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 48px;

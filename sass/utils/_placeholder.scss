@@ -1,4 +1,10 @@
-%all-flexx {
+// %all-flexx {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+// }
+
+@mixin flex() {
   display: flex;
   flex-direction: row;
   justify-content: center;

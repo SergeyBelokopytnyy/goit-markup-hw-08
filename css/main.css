@@ -21,12 +21,6 @@
   --border-clients-color: #afb1b8;
 }
 
-.mobile-container, .portfol__list, .social__list--position, .mobile-media, .header__container, .features__list, .work__list, .team__list, .team__box .social__list, .project__list, .form-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 h1,
 h2,
 h3,
@@ -119,6 +113,9 @@ footer {
 }
 
 .mobile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 48px;
@@ -169,6 +166,9 @@ footer {
 
 /* КНОПКИ-ФИЛЬТР В СЕКЦИИ ПОРТФОЛИО */
 .portfol__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin-bottom: 40px;
   flex-wrap: wrap;
   justify-content: start;
@@ -319,6 +319,9 @@ footer {
 }
 
 .social__list--position {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   justify-content: space-between;
 }
 
@@ -587,6 +590,9 @@ footer {
 }
 
 .mobile-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   justify-content: start;
   position: relative;
 }
@@ -970,6 +976,9 @@ footer {
 }
 
 .header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
@@ -1049,6 +1058,9 @@ footer {
 }
 
 .features__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   margin-top: -30px;
@@ -1136,6 +1148,9 @@ footer {
 }
 
 .work__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin-top: -30px;
   margin-left: -30px;
 }
@@ -1178,6 +1193,9 @@ footer {
 }
 
 .team__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   margin-top: -30px;
@@ -1206,6 +1224,12 @@ footer {
   padding-right: 32px;
 }
 
+.team__box .social__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 @media screen and (min-width: 1200px) {
   .team__box {
     padding-bottom: 30px;
@@ -1223,6 +1247,9 @@ footer {
 }
 
 .project__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
@@ -1473,6 +1500,9 @@ footer {
 }
 
 .form-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   flex-direction: column;
 }
 

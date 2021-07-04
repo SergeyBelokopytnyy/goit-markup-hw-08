@@ -10,7 +10,6 @@
     left: 0;
     min-height: 80px;
     background-color: var(--white-color);
-    // border-bottom: 1px solid var(--border-header-color);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -21,7 +20,7 @@
 }
 
 .header__container {
-  @extend %all-flexx;
+  @include flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
