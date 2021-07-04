@@ -1,10 +1,13 @@
 footer {
   background-color: var(--footer-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 /* АДРЕСА ДЛЯ ФУТЕРА */
 
 .foot-info {
   text-align: center;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .foot-info {
@@ -15,6 +18,7 @@ footer {
   .foot-info {
     text-align: start;
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -31,13 +35,11 @@ footer {
 }
 
 .foot-info__address {
-  margin-bottom: 60px;
   margin-top: 20px;
 }
 @media screen and (min-width: 1200px) {
   .foot-info__address {
     margin-top: 20px;
-    margin-bottom: 0;
   }
 }
 
@@ -66,7 +68,6 @@ footer {
 .form-footer {
   @extend %all-flexx;
   flex-direction: column;
-  // min-width: 450px;
   @media (min-width: 480px) {
     width: 450px;
   }

@@ -2,12 +2,13 @@
   @extend %all-flexx;
   flex-direction: column;
   align-items: center;
+  margin-top: -30px;
 }
 @media screen and (min-width: 768px) {
   .features__list {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-right: -30px;
+    margin-left: -30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -21,15 +22,16 @@
 }
 
 .features__item {
-  margin-bottom: 30px;
+  margin-top: 30px;
+
   @media (min-width: 480px) {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .features__item {
+    margin-left: 30px;
     width: 354px;
-    margin-right: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -38,14 +40,9 @@
   }
 }
 
-//   &:not(:last-child) {
-//     margin-right: 30px;
-//   }
-// }
-
 .features__thumb {
   display: flex;
-  max-width: 450px;
+  // max-width: 450px;
   height: 120px;
   background-color: var(--section-color);
   border-radius: 4px;
